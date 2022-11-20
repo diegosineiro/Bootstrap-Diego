@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inmobiliaria Com</title>
+
+    <!-- Custom CSS -->
+    <link href="/assets/css/styles.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar Responsive -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container-fluid">
+          <!-- Icono y nombre -->
+          <a class="navbar-brand" href="#">
+              <i class="bi bi-house-fill"></i>
+              <span class="text-dark">Inmobiliaria</span>
+          </a>
+          
+          <!-- Botón del menú -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Elementos del menú colapsable -->
+          <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#nuestroequipo">Nuestro equipo</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+
+                      <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                          <li>
+                              <a class="dropdown-item" href="#vender">Vender</a>
+                          </li> 
+                          <li>
+                              <a class="dropdown-item" href="#seagente">Sé agente</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+
+              <hr class="d-lg-none text-white-50">
+
+              <!-- Enlaces de las redes sociales -->
+              <ul class="navbar-nav flex-row flex-wrap text-dark">
+                  <li class="nav-item col-6 col-lg-auto p-3">
+                      <a href="https://twitter.com/home?lang=es" class="text-dark" target="_blank">
+                          <i class="bi bi-twitter"></i>
+                          <small class="d-lg-none ms-2">Twitter</small> 
+                      </a>
+                  </li>
+
+                  <li class="nav-item col-6 col-lg-auto p-3">
+                      <a href="https://web.whatsapp.com/" class="text-dark" target="_blank">
+                          <i class="bi bi-whatsapp"></i>
+                          <small class="d-lg-none ms-2">WhatsApp</small>
+                      </a>
+                  </li>
+
+                  <li class="nav-item col-6 col-lg-auto p-3">
+                      <a href="https://es-es.facebook.com/" class="text-dark" target="_blank">
+                          <i class="bi bi-facebook"></i>
+                          <small class="d-lg-none ms-2">Facebook</small>
+                      </a>
+                  </li>
+
+                  <li class="nav-item col-6 col-lg-auto p-3">
+                      <a href="https://www.instagram.com/" class="text-dark" target="_blank">
+                          <i class="bi bi-instagram"></i>
+                          <small class="d-lg-none ms-2">Instagram</small> 
+                      </a>
+                  </li>
+              </ul>
+        
+              <!-- Botón de contacto -->
+              <div class="d-flex">
+                  <a href="#contacto" role="button" class="btn btn-outline-secondary d-none d-md-inline-block">Contacto</a>
+              </div>
+        
+          </div>
+      </div>  
+  </nav>
+</header>
+
+<main>
+  <!-- Alerta -->
+  <div class="m-4" style="text-align: center;">
+    <div class="alert alert-secondary alert-dismissible fade show">
+      <h4 class="alert-heading display-5" >
+        <i class="bi bi-info-circle" style="font-size: 0.8em;"></i>
+          Importante
+        <i class="bi bi-info-circle" style="font-size: 0.8em;"></i>
+      </h4>
+      <hr>
+      <p>Nos hemos mudado recientemente, ahora nuestro local está situado en Perez Galdos 41, 48010 Bilbao, Bizkaia.</p>
+      <p>Cualquier duda por favor no dude en contactar con nosotros.</p>
+      <button class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+  </div>
+  </div>
+
+
+  <!-- Toast -->
+  <div class="toast-container bottom-0 end-0">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <i class="bi bi-person-fill"></i>
+        <strong class="me-auto">Atención al cliente</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Necesitas ayuda con alguna cosa? No dudes en contactarnos y te responderemos lo más rápido posible!
+        <div class="d-grid">
+          <a href="#contacto" class="btn btn-outline-primary mt-3">Contactar</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Contenido carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active overlay-image" data-bs-interval="4000" style="background-image: url(/assets/img/slide1.avif);">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h6 class="display-6">Tecnología Inmobiliaria 4.0</h6>
+            <p>Para vender tu casa en Bizkaia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item overlay-image" data-bs-interval="4000" style="background-image: url(/assets/img/slide2.avif);">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h6 class="display-6">Vende tu casa</h6>
+            <p>Vende antes - Gana más</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item overlay-image" data-bs-interval="4000" style="background-image: url(/assets/img/slide3.avif);">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h6 class="display-6">Trabaja como agente inmobiliario</h6>
+            <p>Aquí está tu segunda oportunidad</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones Carousel (Previo, siguiente) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<!-- Nuestro equipo -->
+  <div class="container marketing" id="nuestroequipo">
+    <div class="row mb-3">
+      <div class="col-12">
+        <h5 class="display-5" style="text-align: center;">Nuestro equipo</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h6 class="display-6">Robert Habermeier</h6>
+        <p class="text-muted">Director ejecutivo</p>
+        <p>Robert Habermeier es socio de Thiel y cofundador de Polkadot. Tiene experiencia en investigación y desarrollo de blockchains, sistemas distribuidos y criptografía. Miembro de la comunidad Rust desde hace mucho tiempo, se ha centrado en aprovechar las características del lenguaje para crear soluciones altamente paralelas y eficaces.</p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h6 class="display-6">Dr. Gavin Wood</h6>
+        <p class="text-muted">Director de Operaciones</p>
+        <p>Gavin comenzó a desarrollar la tecnología blockchain como co-fundador y CTO de Ethereum. Inventó componentes fundamentales de la industria blockchain, incluyendo Solidity, Consenso de Prueba de Autoridad y Whisper. En Parity, Gavin actualmente lidera la innovación en Substrate y Polkadot. Acuñó el término Web 3.0 en 2014 y es presidente de la Fundación Web3.</p>
+      </div>
+      <div class="col-12 col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h6 class="display-6">Peter Czaban</h6>
+        <p class="text-muted">Director de Marketing</p>
+        <p>Peter es el Director de Tecnología de la Fundación Web3, donde trabaja para apoyar el desarrollo de la próxima generación de tecnologías distribuidas. Obtuvo su Maestría en Ingeniería en la Universidad de Oxford, leyendo Ciencias de la Ingeniería, donde se enfocó en el Aprendizaje de Máquinas Bayesianas. Ha trabajado en industrias de defensa, finanzas y análisis de datos, trabajando en redes mesh, bases de conocimiento distribuidas, modelos de precios cuantitativos, aprendizaje de máquinas y desarrollo de negocios.</p>
+      </div>
+    </div>
+
+
+    <!-- Cards con imágenes (Vender) -->
+    <div class="container mb-5" id="vender">
+      <div class="container">
+          <div class="row mt-5 mb-3" style="text-align: center;">
+            <h5 class="display-5">Vende tu casa</h5>
+            <h5 class="display-6" style="font-size: 1.25em; font-style: italic;">VENDE ANTES - GANA MÁS</h5>
+          </div>
+      
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="card">
+                  <img src="/assets/img/preparacion.jpg" class="card-img-top" alt="Imagen preparación">
+                  <div class="card-body">
+                    <h6 class="card-title display-6" style="text-align: center; font-size: 1.75em;">Preparación</h6>
+                    <p class="card-text">Hemos establecido una estrategia para llevar a cabo la venta de tu propiedad con un Plan de Marketing personalizado. Empleamos técnicas como el Home Staging, Proyectos de Reforma, Vídeos y Reportajes Fotográficos para que al ver tu casa digan: WOW!!!</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card">
+                  <img src="/assets/img/difusion.jpg" class="card-img-top" alt="Imagen difusión">
+                  <div class="card-body">
+                    <h6 class="card-title display-6" style="text-align: center; font-size: 1.75em;">Difusión</h6>
+                    <p class="card-text">Cautivamos a una gran cantidad de compradores gracias a la maxidifusión, a nuestra bolsa de compradores y a las últimas tecnologías relacionadas con el ámbito inmobiliario: Matterport, Tour virtual 360º, Portales Web, Flyers, Carteles, etc.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card">
+                  <img src="/assets/img/negociacion.jpg" class="card-img-top" alt="Imagen negociación">
+                  <div class="card-body">
+                    <h6 class="card-title display-6" style="text-align: center; font-size: 1.75em;">Negociación</h6>
+                    <p class="card-text">Negociamos/Comercializamos por ti y lo arreglamos todo para que salgas beneficiado. Así pues, tenemos un equipo de especialistas relacionados en temas legales, fiscales e hipotecarios.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Accordion (Sé Agente) -->
+    <div id="seagente" class="container mb-5">
+      <div class="row mt-5 mb-3" style="text-align: center;">
+          <h5 class="display-5">Sé Agente</h5>
+          <h5 class="display-6" style="font-size: 1.25em; font-style: italic;">VENDE ANTES - GANA MÁS</h5>
+        </div>
+      <div class="mt-1">
+        <div class="row">
+          <!-- Imagen Responsive -->
+          <div class="col-12 col-lg-4">
+            <img src="/assets/img/agente.jpg" class="rounded-2 img-fluid" alt="imagen Agente">
+          </div>
+          <div class="col-12 col-lg-8">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                              Agente Inmobiliario AUTÓNOMO
+                          </button>
+                      </h2>
+                      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Eres <strong>emprendedor</strong>. Un <strong>valiente</strong>. Quieres tu propio negocio y esta es tu mejor inversión. Ser agente inmobiliario es uno de los 10 negocios más rentables. Ahora elige bien cómo y con quién.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Obtén ingresos MUY altos
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Somos la marca que <strong>mayor porcentaje de beneficios</strong> te ofrece. Te facilitamos 3 vías de ingresos que te pueden hacer ganar <strong>mucho dinero</strong>. Puedes obtener beneficios a través de tu producción propia, los sistemas de sponsorización y los programas de mentorización. Muchos agentes inmobiliarios de Inmobiliaria Com ya ganan <strong>más de 3.000€ al mes</strong>.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Servicios para nuestros agentes
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                          data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              Te ofrecemos una cobertura <strong>estratosférica</strong>. Todas las herramientas y servicios de marketing inmobiliario, un equipo de compañeros con gran experiencia, siempre dispuestos a ayudarte; y sobretodo la mejor formación inmobiliaria gracias a nuestra <strong>Universidad inmobiliaria</strong>. Pondrás en marcha nuestro revolucionario <strong>MÉTODO</strong> y todos los Planes que lo integran: Inolvidable, Cautiva y Revolution. Todo para que en poco tiempo te conviertas en un Agente Inmobiliario con <strong>éxito</strong>.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!-- Formulario con validación (Contacto) -->
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-12 col-lg-6">
+              <div class="row mb-2 mb-lg-5">
+                  <h6 class="display-6">Contacta con nosotros</h6>
+              </div>
+              <div class="row mb-4 mb-lg-0">
+                  <div class="col-12 col-lg-6">
+                      <p style="font-weight: bold; font-size: 1.5em;">Inmobiliaria</p>
+                      <p>Perez Galdos 41<br />
+                      48010 Bilbao, Bizkaia
+                      </p>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <p><i class="bi bi-telephone-inbound-fill" style="font-size: 1.3em;"></i> 946 713 214</p>
+                      <p><i class="bi bi-telephone-inbound-fill" style="font-size: 1.3em;"></i> 627 246 513</p>
+                      <p><i class="bi bi-envelope-fill" style="font-size: 1.3em;"></i> info@inmobiliaria.com</p>
+                  </div>
+              </div>
+
+
+          </div>
+
+          <div class="col-12 col-lg-6">
+              <form id="contacto">
+                  <div class="row">
+                      <div class="col-lg-4">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+                      </div>
+                      <div class="col-lg-4">
+                        <label for="apellido">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
+                      </div>
+                      <div class="col-lg-4">
+                          <label for="inputEmail4">Email</label>
+                          <input type="email" class="form-control" id="botonemail" placeholder="nombre@ejemplo.com" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-lg-12 mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Observaciones" rows="6" required></textarea>
+                        </div>
+                  </div>
+      
+                  <div class="row">
+                      <div class="col text-center">
+                          <button class="btn btn-outline-primary col-12" type="submit">Enviar</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Pie de página -->
+    <div class="container footer">
+      <div class="row">
+          <div class="col text-center">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12 col-md-4 text-start mt-4">
+                          <div class="row">
+                              <div class="col">
+                                  <h2><i class="bi bi-house-fill me-2"></i>Inmobiliaria</h2> 
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col">
+                                  <p style="font-size: 0.7em;">
+                                      © Inmobiliaria Com, S.A. Sociedad Unipersonal.
+                                  </p>
+                              </div>  
+                          </div>
+                      </div>
+                      <div class="col-8 d-none d-md-block mt-5">
+                          <div class="row">
+                              <div class="col-4 text-start">
+                                  <a href="" role="button" data-bs-toggle="modal" data-bs-target="#avisolegal">Aviso Legal</a>
+                                  <div class="modal fade" id="avisolegal" data-bs-backdrop="static" data-bs-keyboard="false">
+                                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                                          <div class="modal-content">
+                                              <div class="modal-header">
+                                                  <h4>Aviso Legal</h4>
+                                                  <button class="btn-close" data-bs-toggle="modal" aria-label="Cerrar"></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                  <h4>Inmobiliaria</h4>
+                                                  <p>Dirección: imobiliaria</p>
+                                                  <p>NIF: B12337749</p>  
+                                                  <p>El sitio web inmobiliaria.com pertenece a Inmobiliarias, con domicilio social en ... El objetivo es ofrecer servicios profesionales relacionados con la intermediación en la compra/venta de inmuebles.</p>
+                                                  <p>Para cualquier consulta, puedes contactar conmigo en el siguiente email: info@inmobiliaria.com</p><br />
+  
+                                                  <h4>Condiciones Generales de uso de la web</h4>
+                                                  <p>Como norma general, el usuario asume la obligación de hacer uso de la web conforme a lo estipulado en la legislación vigente, a la buena fe y a los usos y costumbres generalmente admitidos. Asimismo, el usuario se obliga a no utilizar los servicios de la web para la realización de actividades ilícitas o constitutivas de delito y/o que infrinjan la propiedad intelectual o industrial, o cualesquiera otras normas del ordenamiento jurídico.</p>
+                                                  <p>Queda prohibida la reproducción, distribución, transmisión, adaptación o modificación de los textos, diseños, gráficos, imágenes, informaciones, o demás elementos de la web, salvo que se cuente con la previa y expresa autorización con permiso por escrito de Inmobiliaria. o resulte autorizado por la Ley.</p><br />
+  
+                                                  <h4>Enlaces</h4>
+                                                  <p>Inmobiliaria no se hace responsable de aquellos otros datos, sitios web u archivos a los que sea posible acceder a través de enlaces (links) disponibles entre sus contenidos, dado que dichas páginas o archivos objeto de enlace son responsabilidad de sus respectivos titulares. Esta página, por tanto, ni aprueba, ni hace suyos los productos, servicios, contenidos, información, datos, archivos y cualquier clase de material existente en tales páginas web o archivos y no controla ni, de conformidad con lo dispuesto en la LSSICE, se hace responsable de la calidad, licitud, fiabilidad y utilidad de la información, contenidos, datos y servicios existentes en los sitios enlazados y que son ajenos a esta página. En el caso de que un órgano competente declare la ilicitud de los datos, ordenado su retirada o que se imposibilite el acceso a los mismos, o se hubiera declarado la existencia de la lesión, y se nos haya notificado expresamente la correspondiente resolución, los enlaces que se indiquen serían inmediatamente retirados.</p><br />
+  
+                                                  <h4>Derechos de uso</h4>
+                                                  <p>El usuario puede utilizar la información publicada en este sitio web para uso personal sin restricción alguna. El uso comercial de cualquier contenido de este sitio web queda expresamente prohibido salvo el derecho de cita inherente a una publicación pública. Queda prohibida toda reproducción total o parcial de los contenidos salvo expreso permiso por escrito de KOLANDAIDA REALTOR S.L., sea cual sea el medio por el que se acceda al contenido.</p><br />
+  
+                                                  <h4>Limitación de responsabilidades</h4>
+                                                  <p>Inmobiliaria se reserva el derecho a limitar o interrumpir el acceso a la Web, así como la oferta o prestación de cuántos servicios y productos en ella se publiciten en cualquier momento y sin previo aviso, por motivos de mantenimiento, seguridad, fallo eléctrico, motivos técnicos u otros, sin que por ello se pueda derivar ninguna responsabilidad ni haya derecho a la solicitud de cualquier compensación económica. Inmobiliaria no asumirá ninguna responsabilidad ni directa ni indirecta por daños directos, indirectos o lucro cesante que se pueda derivar de la no disponibilidad de la Web o los servicios de Inmobiliaria.</p>
+                                                  <p>Inmobiliaria podrá incluir enlaces a terceras partes y/o sitios web externos, fuera del control de Inmobiliaria. Aunque periódicamente verificaremos la licitud, veracidad y relevancia de estos sitios, no podemos garantizar la calidad de los mismos. En estos casos, Inmobiliaria no puede garantizar ni puede asumir ningún tipo de responsabilidad respecto a esos contenidos externos o a los daños o perjuicios que puedan ser causados por el acceso a dichos sitios.</p>
+                                                  <p>Inmobiliaria sólo será responsable, de conformidad con el artículo 17 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico, de 11 de Julio de 2002, de aquellos contenidos que habiendo tenido conocimiento efectivo y fehaciente de la ilicitud no hubiera suprimido o desactivado el enlace a los mismos.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                  <button class="btn btn-primary" data-bs-toggle="modal">Aceptar</button>
+                                                  <button class="btn btn-secondary" data-bs-toggle="modal">Cancelar</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-4 text-start">
+                                  <a href="" role="button" data-bs-toggle="modal" data-bs-target="#politicaprivacidad">Política de privacidad</a>
+                                  <div class="modal fade" id="politicaprivacidad" data-bs-backdrop="static" data-bs-keyboard="false">
+                                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                                          <div class="modal-content">
+                                              <div class="modal-header">
+                                                  <h4>Política de privacidad</h4>
+                                                  <button class="btn-close" data-bs-toggle="modal" aria-label="Cerrar"></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                  <h4>Inmobiliaria</h4>
+                                                  <p>Dirección: imobiliaria</p>
+                                                  <p>NIF: B12337749</p>  
+                                                  <p>El sitio web inmobiliaria.com pertenece a Inmobiliarias, con domicilio social en ... El objetivo es ofrecer servicios profesionales relacionados con la intermediación en la compra/venta de inmuebles.</p>
+                                                  <p>Para cualquier consulta, puedes contactar conmigo en el siguiente email: info@inmobiliaria.com</p><br />
+  
+                                                  <h4>Condiciones Generales de uso de la web</h4>
+                                                  <p>Como norma general, el usuario asume la obligación de hacer uso de la web conforme a lo estipulado en la legislación vigente, a la buena fe y a los usos y costumbres generalmente admitidos. Asimismo, el usuario se obliga a no utilizar los servicios de la web para la realización de actividades ilícitas o constitutivas de delito y/o que infrinjan la propiedad intelectual o industrial, o cualesquiera otras normas del ordenamiento jurídico.</p>
+                                                  <p>Queda prohibida la reproducción, distribución, transmisión, adaptación o modificación de los textos, diseños, gráficos, imágenes, informaciones, o demás elementos de la web, salvo que se cuente con la previa y expresa autorización con permiso por escrito de Inmobiliaria. o resulte autorizado por la Ley.</p><br />
+  
+                                                  <h4>Enlaces</h4>
+                                                  <p>Inmobiliaria no se hace responsable de aquellos otros datos, sitios web u archivos a los que sea posible acceder a través de enlaces (links) disponibles entre sus contenidos, dado que dichas páginas o archivos objeto de enlace son responsabilidad de sus respectivos titulares. Esta página, por tanto, ni aprueba, ni hace suyos los productos, servicios, contenidos, información, datos, archivos y cualquier clase de material existente en tales páginas web o archivos y no controla ni, de conformidad con lo dispuesto en la LSSICE, se hace responsable de la calidad, licitud, fiabilidad y utilidad de la información, contenidos, datos y servicios existentes en los sitios enlazados y que son ajenos a esta página. En el caso de que un órgano competente declare la ilicitud de los datos, ordenado su retirada o que se imposibilite el acceso a los mismos, o se hubiera declarado la existencia de la lesión, y se nos haya notificado expresamente la correspondiente resolución, los enlaces que se indiquen serían inmediatamente retirados.</p><br />
+  
+                                                  <h4>Derechos de uso</h4>
+                                                  <p>El usuario puede utilizar la información publicada en este sitio web para uso personal sin restricción alguna. El uso comercial de cualquier contenido de este sitio web queda expresamente prohibido salvo el derecho de cita inherente a una publicación pública. Queda prohibida toda reproducción total o parcial de los contenidos salvo expreso permiso por escrito de KOLANDAIDA REALTOR S.L., sea cual sea el medio por el que se acceda al contenido.</p><br />
+  
+                                                  <h4>Limitación de responsabilidades</h4>
+                                                  <p>Inmobiliaria se reserva el derecho a limitar o interrumpir el acceso a la Web, así como la oferta o prestación de cuántos servicios y productos en ella se publiciten en cualquier momento y sin previo aviso, por motivos de mantenimiento, seguridad, fallo eléctrico, motivos técnicos u otros, sin que por ello se pueda derivar ninguna responsabilidad ni haya derecho a la solicitud de cualquier compensación económica. Inmobiliaria no asumirá ninguna responsabilidad ni directa ni indirecta por daños directos, indirectos o lucro cesante que se pueda derivar de la no disponibilidad de la Web o los servicios de Inmobiliaria.</p>
+                                                  <p>Inmobiliaria podrá incluir enlaces a terceras partes y/o sitios web externos, fuera del control de Inmobiliaria. Aunque periódicamente verificaremos la licitud, veracidad y relevancia de estos sitios, no podemos garantizar la calidad de los mismos. En estos casos, Inmobiliaria no puede garantizar ni puede asumir ningún tipo de responsabilidad respecto a esos contenidos externos o a los daños o perjuicios que puedan ser causados por el acceso a dichos sitios.</p>
+                                                  <p>Inmobiliaria sólo será responsable, de conformidad con el artículo 17 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico, de 11 de Julio de 2002, de aquellos contenidos que habiendo tenido conocimiento efectivo y fehaciente de la ilicitud no hubiera suprimido o desactivado el enlace a los mismos.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                  <button class="btn btn-primary" data-bs-toggle="modal">Aceptar</button>
+                                                  <button class="btn btn-secondary" data-bs-toggle="modal">Cancelar</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-4 text-start">
+                                  <a href="" role="button" data-bs-toggle="modal" data-bs-target="#usodecookies">Uso de cookies</a>
+                                  <div class="modal fade" id="usodecookies" data-bs-backdrop="static" data-bs-keyboard="false">
+                                      <div class="modal-dialog modal-dialog-centered modal-xl">
+                                          <div class="modal-content">
+                                              <div class="modal-header">
+                                                  <h4>Uso de cookies</h4>
+                                                  <button class="btn-close" data-bs-toggle="modal" aria-label="Cerrar"></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                  <h4>Inmobiliaria</h4>
+                                                  <p>Dirección: imobiliaria</p>
+                                                  <p>NIF: B12337749</p>  
+                                                  <p>El sitio web inmobiliaria.com pertenece a Inmobiliarias, con domicilio social en ... El objetivo es ofrecer servicios profesionales relacionados con la intermediación en la compra/venta de inmuebles.</p>
+                                                  <p>Para cualquier consulta, puedes contactar conmigo en el siguiente email: info@inmobiliaria.com</p><br />
+  
+                                                  <h4>Condiciones Generales de uso de la web</h4>
+                                                  <p>Como norma general, el usuario asume la obligación de hacer uso de la web conforme a lo estipulado en la legislación vigente, a la buena fe y a los usos y costumbres generalmente admitidos. Asimismo, el usuario se obliga a no utilizar los servicios de la web para la realización de actividades ilícitas o constitutivas de delito y/o que infrinjan la propiedad intelectual o industrial, o cualesquiera otras normas del ordenamiento jurídico.</p>
+                                                  <p>Queda prohibida la reproducción, distribución, transmisión, adaptación o modificación de los textos, diseños, gráficos, imágenes, informaciones, o demás elementos de la web, salvo que se cuente con la previa y expresa autorización con permiso por escrito de Inmobiliaria. o resulte autorizado por la Ley.</p><br />
+  
+                                                  <h4>Enlaces</h4>
+                                                  <p>Inmobiliaria no se hace responsable de aquellos otros datos, sitios web u archivos a los que sea posible acceder a través de enlaces (links) disponibles entre sus contenidos, dado que dichas páginas o archivos objeto de enlace son responsabilidad de sus respectivos titulares. Esta página, por tanto, ni aprueba, ni hace suyos los productos, servicios, contenidos, información, datos, archivos y cualquier clase de material existente en tales páginas web o archivos y no controla ni, de conformidad con lo dispuesto en la LSSICE, se hace responsable de la calidad, licitud, fiabilidad y utilidad de la información, contenidos, datos y servicios existentes en los sitios enlazados y que son ajenos a esta página. En el caso de que un órgano competente declare la ilicitud de los datos, ordenado su retirada o que se imposibilite el acceso a los mismos, o se hubiera declarado la existencia de la lesión, y se nos haya notificado expresamente la correspondiente resolución, los enlaces que se indiquen serían inmediatamente retirados.</p><br />
+  
+                                                  <h4>Derechos de uso</h4>
+                                                  <p>El usuario puede utilizar la información publicada en este sitio web para uso personal sin restricción alguna. El uso comercial de cualquier contenido de este sitio web queda expresamente prohibido salvo el derecho de cita inherente a una publicación pública. Queda prohibida toda reproducción total o parcial de los contenidos salvo expreso permiso por escrito de KOLANDAIDA REALTOR S.L., sea cual sea el medio por el que se acceda al contenido.</p><br />
+  
+                                                  <h4>Limitación de responsabilidades</h4>
+                                                  <p>Inmobiliaria se reserva el derecho a limitar o interrumpir el acceso a la Web, así como la oferta o prestación de cuántos servicios y productos en ella se publiciten en cualquier momento y sin previo aviso, por motivos de mantenimiento, seguridad, fallo eléctrico, motivos técnicos u otros, sin que por ello se pueda derivar ninguna responsabilidad ni haya derecho a la solicitud de cualquier compensación económica. Inmobiliaria no asumirá ninguna responsabilidad ni directa ni indirecta por daños directos, indirectos o lucro cesante que se pueda derivar de la no disponibilidad de la Web o los servicios de Inmobiliaria.</p>
+                                                  <p>Inmobiliaria podrá incluir enlaces a terceras partes y/o sitios web externos, fuera del control de Inmobiliaria. Aunque periódicamente verificaremos la licitud, veracidad y relevancia de estos sitios, no podemos garantizar la calidad de los mismos. En estos casos, Inmobiliaria no puede garantizar ni puede asumir ningún tipo de responsabilidad respecto a esos contenidos externos o a los daños o perjuicios que puedan ser causados por el acceso a dichos sitios.</p>
+                                                  <p>Inmobiliaria sólo será responsable, de conformidad con el artículo 17 de la Ley 34/2002 de Servicios de la Sociedad de la Información y Comercio Electrónico, de 11 de Julio de 2002, de aquellos contenidos que habiendo tenido conocimiento efectivo y fehaciente de la ilicitud no hubiera suprimido o desactivado el enlace a los mismos.</p>
+                                              </div>
+                                              <div class="modal-footer">
+                                                  <button class="btn btn-primary" data-bs-toggle="modal">Aceptar</button>
+                                                  <button class="btn btn-secondary" data-bs-toggle="modal">Cancelar</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- JS Bootstrap -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- JS PopOver -->
+    <script src="../assets/js/popover.js" lang="javascript"></script>
+    <!-- JS Toast -->
+    <script src="../assets/js/toast.js" lang="javascript"></script>
+      
+  </body>
+</html>
